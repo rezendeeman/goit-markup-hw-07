@@ -1,3 +1,32 @@
+.social-icons-links-list {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-links {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+.social-links:hover, .social-links:focus {
+  background-color: var(--active-link-color);
+}
+.social-links:hover > .social-icons, .social-links:focus > .social-icons {
+  fill: var(--social-icons-color-active);
+}
+
+.social-icons {
+  width: 20px;
+  height: 20px;
+  fill: var(--social-icons-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+
 :root {
   /* general colors */
   --general-color: #757575;
@@ -72,6 +101,26 @@ p {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.logo {
+  font-family: var(--raleway-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.logo__web {
+  color: var(--logo-web-color);
+}
+
+.header__logo {
+  color: var(--header-logo-color);
+  margin-right: 93px;
+}
+
+.footer__logo {
+  color: var(--footer-logo-color);
 }
 
 header {
@@ -204,6 +253,9 @@ footer address {
 .social-info__icons {
   fill: var(--social-icons-color-active);
 }
+.social-info .social-icons-links-list {
+  margin-top: 20px;
+}
 
 .follow {
   margin-left: 93px;
@@ -270,26 +322,6 @@ footer address {
   fill: #FFFFFF;
   width: 24px;
   height: 24px;
-}
-
-.logo {
-  font-family: var(--raleway-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-}
-.logo__web {
-  color: var(--logo-web-color);
-}
-
-.header__logo {
-  color: var(--header-logo-color);
-  margin-right: 93px;
-}
-
-.footer__logo {
-  color: var(--footer-logo-color);
 }
 
 .title {
@@ -642,35 +674,6 @@ footer address {
   color: var(--title-color);
   font-weight: 500;
   margin-bottom: 10px;
-}
-
-.social-icons-links-list {
-  margin-top: 16px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.social-links {
-  border-radius: 50%;
-  width: 44px;
-  height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
-}
-.social-links:hover, .social-links:focus {
-  background-color: var(--active-link-color);
-}
-.social-links:hover > .social-icons, .social-links:focus > .social-icons {
-  fill: var(--social-icons-color-active);
-}
-
-.social-icons {
-  width: 20px;
-  height: 20px;
-  fill: var(--social-icons-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 
 .clients-cards-list {
